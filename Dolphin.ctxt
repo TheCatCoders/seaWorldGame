@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\n\ Act\ -\ do\ whatever\ the\ Dolphin\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=
+comment1.target=void\ keyPress()
+comment1.text=\n\ Method\ call\ when\ a\ key\ is\ press\n
+comment2.params=
+comment2.target=void\ gameOver()
+comment2.text=\n\ Method\ that\ stops\ the\ game\n
+comment3.params=
+comment3.target=void\ touchingObstacle()
+comment3.text=\n\ Check\ if\ the\ dolphin\ is\ touching\ an\ obstacle.\n\ \n\ If\ touching\ a\ Starfish\ we\ have\ 1\ pts,\ otherwise\ the\ game\ is\ over.\n
+numComments=4
