@@ -11,7 +11,6 @@ import java.util.List;
 public class Dolphin extends Actor {   
     
     int gravity = 2;
-    int eatenStarFish;
     
     /**
      * Act - do whatever the Dolphin wants to do. This method is called whenever
@@ -50,10 +49,8 @@ public class Dolphin extends Actor {
         }
 
         if ( Greenfoot.isKeyDown( "f" ) ) {
-            System.out.println( "f" );
-            // Add bubble
-            Bubble b = new Bubble();
-            this.getWorld().addObject(b,this.getX(), this.getY() );
+            // Add bubble in front of the dolphin
+            this.getWorld().addObject( new Bubble(), this.getX()+38, this.getY()+20 );
         }
     }
     
@@ -78,9 +75,8 @@ public class Dolphin extends Actor {
                 // Get the scroreboard from the world
                List<Scoreboard> listSb  = this.getWorld().getObjects( Scoreboard.class );
                Scoreboard sb = listSb.get(0);
-               eatenStarFish++;
-               sb.setScore(eatenStarFish);
-               
+               int score = sb.getScore();
+               sb.setScore( score+1 );
                this.getWorld().removeObject( this.getOneIntersectingObject( StarFish.class ) );
             } else {
                 gameOver();

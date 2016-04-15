@@ -10,6 +10,8 @@ import java.awt.Font;
  */
 public class Scoreboard extends Actor
 {
+    int totalScore;
+    
     /**
      * Constructor
      */
@@ -22,27 +24,39 @@ public class Scoreboard extends Actor
     }    
     
     /**
-     * 
+     * Get the score
      */
-    public void setScore( int score ) {
+    public int getScore() {
+        return totalScore;
+    }
+    
+    /**
+     * Set the score and display it properly on the screen
+     * @param newScore int
+     */
+    public void setScore( int newScore ) {
+        this.totalScore = newScore;
+        
         GreenfootImage image = this.getImage();
         image.setColor( Color.white );
         image.fill();
         image.setFont( new Font("Serif", Font.BOLD, 32) );
         image.setColor( Color.blue );
         
-        String s;
-        if ( score < 10 ) {
-            s = "000" + score;
-        } else if ( score >= 10 && score < 100 ) {
-            s = "00" + score;
-        } else if ( score >= 1000 && score < 10000 ) {
-            s = "0" + score;
+        String str;
+        if ( totalScore < 0 ) {
+            str="-00" + -totalScore;
+        } else if ( totalScore >= 0 && totalScore < 10 ) {
+            str = "000" + totalScore;
+        } else if ( totalScore >= 10 && totalScore < 100 ) {
+            str = "00" + totalScore;
+        } else if ( totalScore >= 1000 && totalScore < 10000 ) {
+            str = "0" + totalScore;
         } else {
-            s = "" + score;
+            str = "" + totalScore;
         }
         
-        image.drawString( String.valueOf( s ), 30, 30 );
+        image.drawString( String.valueOf( str ), 30, 30 );
         this.setImage(image);
     }
 }

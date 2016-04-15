@@ -2,7 +2,10 @@
 comment0.params=
 comment0.target=Scoreboard()
 comment0.text=\n\ Constructor\n
-comment1.params=score
-comment1.target=void\ setScore(int)
-comment1.text=\n\ \n
-numComments=2
+comment1.params=
+comment1.target=int\ getScore()
+comment1.text=\n\ Get\ the\ score\n
+comment2.params=newScore
+comment2.target=void\ setScore(int)
+comment2.text=\n\ Set\ the\ score\ and\ display\ it\ properly\ on\ the\ screen\n\ @param\ newScore\ int\n
+numComments=3
