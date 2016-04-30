@@ -1,6 +1,6 @@
 Class documentation
 <---- javadoc command: ---->
-/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/bin/javadoc
+/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/bin/javadoc
 -author
 -version
 -nodeprecated
@@ -12,21 +12,30 @@ Class documentation
 -source
 1.8
 -classpath
-/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/extensions/greenfoot.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/bluejcore.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/bluejeditor.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/bluejext.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/AppleJavaExtensions.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/junit-4.8.2.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/bluej.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/commons-httpclient-3.1.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/commons-logging-api-1.1.2.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/commons-codec-1.3.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/jl1.0.1.jar:/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/opencsv-2.3.jar:/Users/froberge/projects/greenfoot/helloWorld/helloWorld
+/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/extensions/greenfoot.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/bluejcore.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/bluejeditor.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/bluejext.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/AppleJavaExtensions.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/junit-4.11.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/hamcrest-core-1.3.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/bluej.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/commons-httpclient-3.1.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/commons-logging-api-1.1.2.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/commons-codec-1.3.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/jl1.0.1.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/opencsv-2.3.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/xom-1.2.9.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/jna-4.2.0.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/jna-platform-4.2.0.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/guava-17.0.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/javassist-3.18.0.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/commons-vfs2-2.0.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/httpclient-4.1.1.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/httpcore-4.1.jar:/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/httpmime-4.1.1.jar:/Users/froberge/projects/greenfoot/seaWorld
 -d
-/Users/froberge/projects/greenfoot/helloWorld/helloWorld/doc
+/Users/froberge/projects/greenfoot/seaWorld/doc
 -encoding
 UTF-8
 -charset
 UTF-8
 -docletpath
-/Applications/Greenfoot 2.4.2/Greenfoot.app/Contents/Resources/Java/bjdoclet.jar
+/Applications/Greenfoot 3.0.2/Greenfoot.app/Contents/Resources/Java/bjdoclet.jar
 -doclet
 bluej.doclet.doclets.formats.html.HtmlDoclet
-/Users/froberge/projects/greenfoot/helloWorld/helloWorld/myWorld.java
+/Users/froberge/projects/greenfoot/seaWorld/seaWorld.java
 <---- end of javadoc command ---->
-Loading source file /Users/froberge/projects/greenfoot/helloWorld/helloWorld/myWorld.java...
-/Users/froberge/projects/greenfoot/helloWorld/helloWorld/myWorld.java:40: error: ';' expected
-        Greenfoot.isKeyDown(_keyName_)
-                                      ^
-1 error
+Loading source file /Users/froberge/projects/greenfoot/seaWorld/seaWorld.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_66
+Building tree for all the packages and classes...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/seaWorld.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/package-frame.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/package-summary.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/allclasses-frame.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/allclasses-noframe.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/index.html...
+Generating /Users/froberge/projects/greenfoot/seaWorld/doc/stylesheet.css...
