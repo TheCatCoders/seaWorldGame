@@ -1,18 +1,12 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Pipes here.
+ * Super class for all the Obstable objects.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Charlotte, Olivier and Felix Roberge
+ * @version March 2016
  */
 public class Obstacles extends Actor
 {
     int OBS_SPEED = 2;
-    
-    /**
-     * 
-     */
-    public void act() {
-    }    
 }

@@ -2,36 +2,44 @@ import greenfoot.*;
 import java.util.*;
 
 /**
- * Write a description of class myWorld here.
+ * This wolrd represent the sea where a dolphin is floating around.  
+ * There are obstacles that will need to be avoid by the dolphin.
+ * You make points when you eat a Star fish or destroy a turtle or a lobster.  You lose point if you destroy a Star fish.
+ * Bullet are fired by pressing the "f" key.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Charlotte, Olivier and Felix Roberge
+ * @version March 2016
  */
-public class seaWorld extends World
+public class SeaWorld extends World
 {
     int steps = 0;
     int SPACE_OBS = 150;
-
+    
+    Scoreboard scoreboard = null;
+    
     /**
-     * Constructor for objects of class seaWorld.
-     * 
+     * Constructor for objects of class SeaWorld.
      */
-    public seaWorld() {
+    public SeaWorld() {
         
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels. With no boundry
+        // Create a new world 700x500 cells with a cell size of 1x1 pixels. With no boundry
         super(700, 500, 1, false); 
         
         //Set the painting Order
         setPaintOrder( GameOver.class, Scoreboard.class, Dolphin.class, Obstacles.class );
         
-        // Create a new dolphin and add it to the sea
+        // Create the main caracter, the dolphin and add it to the sea at a given position
         Dolphin dolphin = new Dolphin();
         addObject(dolphin,100, this.getHeight() / 2 );
 
-        // Add the scoreboard
-        addObject(new Scoreboard(),590, 20 );
+        // Add the scoreboard to the world at a given position
+        addObject(getScoreboard(),590, 20 );
     }
     
+    /**
+     * Default method in Greenfoot.
+     * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() {
         steps++;
         
@@ -41,8 +49,21 @@ public class seaWorld extends World
         }
     }
     
+    /** 
+     * Get the object scoreboard from the world.
+     * 
+     * return scoreboard Scoreboard
+     */
+    public Scoreboard getScoreboard() {
+        if ( this.scoreboard == null ) {
+            this.scoreboard = new Scoreboard();
+        }
+        
+        return this.scoreboard;
+    }
+        
     /**
-     * Add a button pipe to the screen
+     * Add an Obstacle to the screen
      */
     private void addObstacles() {
 
@@ -53,7 +74,7 @@ public class seaWorld extends World
     }
     
     /**
-     * Generate and obstacle
+     * Generate Obstacle.
      */
     private Obstacles generateObstacle() {
         Random r = new Random();

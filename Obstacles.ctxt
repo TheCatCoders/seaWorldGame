@@ -1,5 +1,4 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ act()
-comment0.text=\n\ \n
+comment0.target=Obstacles
+comment0.text=\n\ Super\ class\ for\ all\ the\ Obstable\ objects.\n\ \n\ @author\ Charlotte,\ Olivier\ and\ Felix\ Roberge\n\ @version\ March\ 2016\n
 numComments=1

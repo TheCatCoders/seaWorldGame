@@ -3,10 +3,10 @@ import java.awt.Color;
 import java.awt.Font;
 
 /**
- * Write a description of class Scrore here.
+ * Scoreboard object.  This object is there to display the socre of the user.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Charlotte, Olivier and Felix Roberge
+ * @version March 2016
  */
 public class Scoreboard extends Actor
 {
@@ -23,6 +23,7 @@ public class Scoreboard extends Actor
         setScore( 0 );
     }    
     
+    
     /**
      * Get the score
      */
@@ -32,6 +33,7 @@ public class Scoreboard extends Actor
     
     /**
      * Set the score and display it properly on the screen
+     * 
      * @param newScore int
      */
     public void setScore( int newScore ) {
@@ -45,8 +47,26 @@ public class Scoreboard extends Actor
         
         String str;
         if ( totalScore < 0 ) {
-            str="-00" + -totalScore;
-        } else if ( totalScore >= 0 && totalScore < 10 ) {
+            str = editNegativeScore(totalScore);
+        } else {
+            str = editPositiveScore(totalScore);
+        }
+        
+        image.drawString( String.valueOf( str ), 30, 30 );
+        this.setImage(image);
+    }
+    
+    /**
+     * Edit the score properly iif the score is positive
+     * We always want 4 digit.
+     * 
+     * @param the score to display int.
+     * @return the edited score String
+     */
+    private String editPositiveScore( int totalScore ) {
+        String str;
+        
+        if ( totalScore >= 0 && totalScore < 10 ) {
             str = "000" + totalScore;
         } else if ( totalScore >= 10 && totalScore < 100 ) {
             str = "00" + totalScore;
@@ -56,7 +76,30 @@ public class Scoreboard extends Actor
             str = "" + totalScore;
         }
         
-        image.drawString( String.valueOf( str ), 30, 30 );
-        this.setImage(image);
+        return str;
     }
+    
+    /**
+     * Edit the score properly iif the score is negative
+     * We always want 4 digit.
+     * 
+     * @param the score to display int.
+     * @return the edited score String
+     */
+    private String editNegativeScore( int totalScore ) {
+        String str;
+        
+        if ( totalScore < 0 && totalScore > -10 ) {
+            str = "-000" + -totalScore;
+        } else if ( totalScore <= -10 && totalScore > -100 ) {
+            str = "-00" + -totalScore;
+        } else if ( totalScore >= -100 && totalScore > -1000 ) {
+            str = "-0" + -totalScore;
+        } else {
+            str = "" + totalScore;
+        }
+        
+        return str;
+    }
+    
 }
