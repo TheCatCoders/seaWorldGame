@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE: Sea World Game
-PURPOSE OF PROJECT: Show the kids are to program a game using Greenfoot
-VERSION or DATE: Januaray 2016, version 1
-HOW TO START THIS PROJECT: Download Greenfoot and open the projet in it.
-AUTHORS: Felix Roberge & Kids
-USER INSTRUCTIONS:
+PROJECT TITLE: Sea World
+PURPOSE OF PROJECT: This project was created with my kids to introduce them to java programming.
+VERSION or DATE: version 1
+HOW TO START THIS PROJECT:
+AUTHORS: Charlotte, Olivier and Felix Roberge
+USER INSTRUCTIONS:  Use the arrow to move the dolphin around, you need to avoid the turtles and the lobsters.  The dolphin eat the star fish.  You can destroy an obstable by lauching bullet by pressing f. 
