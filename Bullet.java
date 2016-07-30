@@ -39,15 +39,15 @@ public class Bullet extends ControlActors
         Actor obstacle = this.getOneIntersectingObject(Obstacles.class);
         
         if ( obstacle != null ) {
-            int s = this.getWorldOfType(SeaWorld.class).getScoreboard().getScore();
+            int s = 0;
 
             if ( obstacle instanceof StarFish ) {
-               s = s - 2;
+               s = -2;
             } else {
-               s = s + 2;
+               s =  2;
             }
 
-           this.getWorldOfType(SeaWorld.class).getScoreboard().setScore( s );
+           updateScore( s );
 
             // Remove the obstacle and the bullet
             this.getWorld().removeObject(obstacle);  

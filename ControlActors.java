@@ -19,4 +19,15 @@ public class ControlActors extends Actor
            return false;
        }
     }
+    
+    /**
+     * Change the score.
+     * 
+     * @param number to add.
+     */
+    protected void updateScore( int scoreChange ) {
+      int s = this.getWorldOfType(SeaWorld.class).getScoreboard().getScore();
+      this.getWorldOfType(SeaWorld.class).getScoreboard().setScore( s + scoreChange );
+    }
 }
+

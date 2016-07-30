@@ -59,12 +59,13 @@ public class Dolphin extends ControlActors {
      */
     private void touchingObstacle() {
         
-        if ( this.getOneIntersectingObject( Obstacles.class ) != null ) {
+        Actor obs = this.getOneIntersectingObject(Obstacles.class);
+        
+        if ( obs != null ) {
             
-            if ( this.getOneIntersectingObject( StarFish.class ) != null ) {
-               int s = this.getWorldOfType(SeaWorld.class).getScoreboard().getScore();
-               this.getWorldOfType(SeaWorld.class).getScoreboard().setScore( s+1 );
-               this.getWorld().removeObject( this.getOneIntersectingObject( StarFish.class ) );
+            if ( obs instanceof StarFish ) {
+               updateScore( 1 );
+               this.getWorld().removeObject( obs );
             } else {
                 gameOver();
             }

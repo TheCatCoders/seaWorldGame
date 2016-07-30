@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ControlActors
+comment0.text=\n\ This\ class\ is\ the\ super\ class\ for\ all\ user\ control\ objects\n\ \n\ @author\ Charlotte,\ Olivier\ and\ Felix\ Roberge\n\ @version\ March\ 2016\n
+comment1.params=
+comment1.target=boolean\ isOutsideWorld()
+comment2.params=scoreChange
+comment2.target=void\ updateScore(int)
+comment2.text=\n\ Change\ the\ score.\n\ \n\ @param\ number\ to\ add.\n
+numComments=3
