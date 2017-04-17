@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Bullet
-comment0.text=\n\ Bullet\ object.\n\ \n\ @author\ Charlotte,\ Olivier\ and\ Felix\ Roberge\n\ @version\ March\ 2016\n
+comment0.text=\n\ Bullet\ object.\ \ This\ object\ represent\ the\ bullet\ that\ the\ dolphins\ can\ fire.\n\n\ @author\ Charlotte,\ Olivier\ and\ Felix\ Roberge\n\ @version\ March\ 2016\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Default\ method\ in\ Greenfoot.\n\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=boolean\ obstacleDestroy()
-comment2.text=\n\ Check\ if\ the\ bullet\ is\ touching\ an\ obstacle.\ \ If\ so\ destroy\ the\ obstacle\n\ Destroying\ a\ Starfish\ will\ remove\ 2\ pts\ otherwise\ it\ added\ 2.\n\ Return\ true\ is\ the\ object\ was\ destroyed\n\ \n\ @return\ boolean\ \n
+comment2.text=\n\ Check\ if\ the\ bullet\ is\ touching\ an\ obstacle.\ \ If\ so\ destroy\ the\ obstacle\n\ Destroying\ a\ Starfish\ will\ remove\ 2\ pts\ otherwise\ it\ added\ 2.\n\ Return\ true\ is\ the\ object\ was\ destroyed\n\n\ @return\ boolean\n
 numComments=3
