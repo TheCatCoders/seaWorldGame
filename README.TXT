@@ -1,4 +1,4 @@
-make the change directly in master third time test. pre-commit hook
+make the change directly in master. pre-commit hook
 
 PROJECT TITLE: Sea World
 ORGANIZATION: TheCatCoders
