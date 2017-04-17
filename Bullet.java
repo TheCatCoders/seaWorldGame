@@ -2,8 +2,8 @@ import greenfoot.*;
 import java.util.List;
 
 /**
- * Bullet object.
- * 
+ * Bullet object.  This object represent the bullet that the dolphins can fire.
+ *
  * @author Charlotte, Olivier and Felix Roberge
  * @version March 2016
  */
@@ -13,7 +13,7 @@ public class Bullet extends ControlActors
      * Default method in Greenfoot.
      * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    public void act()
     {
        if ( !obstacleDestroy() ) {
            // Check if the bullet is outside of the screen.  If so destroy the bullet, else move
@@ -25,19 +25,19 @@ public class Bullet extends ControlActors
                this.getWorld().removeObjects(this.getIntersectingObjects(Bullet.class));
             }
         }
-    }    
+    }
 
-        
+
     /**
      * Check if the bullet is touching an obstacle.  If so destroy the obstacle
      * Destroying a Starfish will remove 2 pts otherwise it added 2.
      * Return true is the object was destroyed
-     * 
-     * @return boolean 
+     *
+     * @return boolean
      */
     private boolean obstacleDestroy() {
         Actor obstacle = this.getOneIntersectingObject(Obstacles.class);
-        
+
         if ( obstacle != null ) {
             int s = 0;
 
@@ -50,9 +50,9 @@ public class Bullet extends ControlActors
            updateScore( s );
 
             // Remove the obstacle and the bullet
-            this.getWorld().removeObject(obstacle);  
+            this.getWorld().removeObject(obstacle);
             this.getWorld().removeObject(this);
-            
+
             return true;
         } else {
             return false;
