@@ -1,4 +1,4 @@
-make the change directly in master. pre-commit hook
+Protect branch test.
 
 PROJECT TITLE: Sea World
 ORGANIZATION: TheCatCoders
