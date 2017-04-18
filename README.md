@@ -33,4 +33,4 @@ Version: 1
 
 ## Repository Specific
 
-Uses GitHub pull request Workflow.   feature branch
+Uses GitHub pull request Workflow.
