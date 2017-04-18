@@ -1,5 +1,3 @@
-<a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
-
 PROJECT TITLE: Sea World Game
 ORGANIZATION: TheCatCoders
 PURPOSE OF PROJECT: This project was created with my kids to introduce them to Object java programming.
