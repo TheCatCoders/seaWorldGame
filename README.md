@@ -34,5 +34,3 @@ Version: 1
 ## Repository Specific
 
 Uses GitHub pull request Workflow.
-
-Test mauricio
