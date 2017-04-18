@@ -1,5 +1,5 @@
 <a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
-
+[![Slack Status](https://slack.yourdomain.com/badge.svg)](https://yourdomain.com)
 
 ## Synopsis
 
