@@ -37,5 +37,3 @@ Version: 1
 ## Repository Specific
 
 Uses GitHub pull request Workflow.
-
-test niama
