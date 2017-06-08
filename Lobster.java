@@ -11,6 +11,7 @@ public class Lobster extends Obstacles
     /**
      * Default method in Greenfoot.
      * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     *
      */
     public void act() 
     {
